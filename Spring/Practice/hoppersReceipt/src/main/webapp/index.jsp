@@ -11,7 +11,7 @@
 <body>
     <h2>Customer name: <c:out value="${name}"/></h2>
     <p>Item name: <c:out value="${item}"/></p>
-    <p>Price: <c:out value="${price}"/></p>
+    <p>Price: $<c:out value="${price}"/></p>
     <p>Description: <c:out value="${description}"/></p>
     <p>Vendor: <c:out value="${vendor}"/></p>
 </body>

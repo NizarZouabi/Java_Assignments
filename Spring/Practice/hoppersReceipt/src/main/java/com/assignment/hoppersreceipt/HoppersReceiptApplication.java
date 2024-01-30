@@ -9,5 +9,4 @@ public class HoppersReceiptApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(HoppersReceiptApplication.class, args);
 	}
-
 }

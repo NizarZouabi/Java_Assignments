@@ -9,11 +9,11 @@ public class MarketController {
 	@RequestMapping("/")
     public String index(Model model) {
         
-        String name = "Grace Hopper";
-        String itemName = "Copper wire";
-        double price = 5.25;
-        String description = "Metal strips, also an illustration of nanoseconds.";
-        String vendor = "Little Things Corner Store";
+        String name = "John Doe";
+        String itemName = "Compound X";
+        double price = 10.25;
+        String description = "Red sugar, also an illustration of nanites.";
+        String vendor = "All Weird Things Corner Store";
     
     	model.addAttribute("name", name);
     	model.addAttribute("item", itemName);
