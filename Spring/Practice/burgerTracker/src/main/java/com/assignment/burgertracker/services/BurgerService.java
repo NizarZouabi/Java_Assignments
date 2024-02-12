@@ -32,4 +32,18 @@ public class BurgerService {
 			return null;
 		}
 	}
+	
+	public Burger updateBurger(Burger burger) {
+		Optional<Burger> optionalBurger = burgerRepository.findById(burger.getId());
+		if (optionalBurger.isPresent()) {
+			Burger existingBurger = optionalBurger.get();
+			existingBurger.setName(burger.getName());
+			existingBurger.setRestaurant(burger.getRestaurant());
+			existingBurger.setRating(burger.getRating());
+			existingBurger.setNotes(burger.getNotes());
+			return burgerRepository.save(existingBurger);
+		} else {
+			return null;
+		}
+	}
 }
